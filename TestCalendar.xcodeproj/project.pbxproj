@@ -3,18 +3,19 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DF455EE324BEC58E004B771C /* EventLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF455EE224BEC58E004B771C /* EventLabel.swift */; };
 		DFC557C624BCB5D000F9AB71 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFC557C524BCB5D000F9AB71 /* AppDelegate.swift */; };
 		DFC557C824BCB5D000F9AB71 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFC557C724BCB5D000F9AB71 /* SceneDelegate.swift */; };
 		DFC557CA24BCB5D000F9AB71 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFC557C924BCB5D000F9AB71 /* ViewController.swift */; };
-		DFC557CD24BCB5D000F9AB71 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DFC557CB24BCB5D000F9AB71 /* Main.storyboard */; };
 		DFC557CF24BCB5D100F9AB71 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DFC557CE24BCB5D100F9AB71 /* Assets.xcassets */; };
 		DFC557D224BCB5D100F9AB71 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DFC557D024BCB5D100F9AB71 /* LaunchScreen.storyboard */; };
 		DFC557DD24BCB5D100F9AB71 /* TestCalendarTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFC557DC24BCB5D100F9AB71 /* TestCalendarTests.swift */; };
 		DFC557E824BCB5D100F9AB71 /* TestCalendarUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFC557E724BCB5D100F9AB71 /* TestCalendarUITests.swift */; };
+		DFC557F724BCB6C900F9AB71 /* HorizonCalendar in Frameworks */ = {isa = PBXBuildFile; productRef = DFC557F624BCB6C900F9AB71 /* HorizonCalendar */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,11 +36,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		DF455EE224BEC58E004B771C /* EventLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventLabel.swift; sourceTree = "<group>"; };
 		DFC557C224BCB5D000F9AB71 /* TestCalendar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestCalendar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DFC557C524BCB5D000F9AB71 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DFC557C724BCB5D000F9AB71 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		DFC557C924BCB5D000F9AB71 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		DFC557CC24BCB5D000F9AB71 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DFC557CE24BCB5D100F9AB71 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DFC557D124BCB5D100F9AB71 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DFC557D324BCB5D100F9AB71 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -56,6 +57,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DFC557F724BCB6C900F9AB71 /* HorizonCalendar in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -102,10 +104,10 @@
 				DFC557C524BCB5D000F9AB71 /* AppDelegate.swift */,
 				DFC557C724BCB5D000F9AB71 /* SceneDelegate.swift */,
 				DFC557C924BCB5D000F9AB71 /* ViewController.swift */,
-				DFC557CB24BCB5D000F9AB71 /* Main.storyboard */,
 				DFC557CE24BCB5D100F9AB71 /* Assets.xcassets */,
 				DFC557D024BCB5D100F9AB71 /* LaunchScreen.storyboard */,
 				DFC557D324BCB5D100F9AB71 /* Info.plist */,
+				DF455EE224BEC58E004B771C /* EventLabel.swift */,
 			);
 			path = TestCalendar;
 			sourceTree = "<group>";
@@ -144,6 +146,9 @@
 			dependencies = (
 			);
 			name = TestCalendar;
+			packageProductDependencies = (
+				DFC557F624BCB6C900F9AB71 /* HorizonCalendar */,
+			);
 			productName = TestCalendar;
 			productReference = DFC557C224BCB5D000F9AB71 /* TestCalendar.app */;
 			productType = "com.apple.product-type.application";
@@ -215,6 +220,9 @@
 				Base,
 			);
 			mainGroup = DFC557B924BCB5D000F9AB71;
+			packageReferences = (
+				DFC557F524BCB6C900F9AB71 /* XCRemoteSwiftPackageReference "HorizonCalendar" */,
+			);
 			productRefGroup = DFC557C324BCB5D000F9AB71 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -233,7 +241,6 @@
 			files = (
 				DFC557D224BCB5D100F9AB71 /* LaunchScreen.storyboard in Resources */,
 				DFC557CF24BCB5D100F9AB71 /* Assets.xcassets in Resources */,
-				DFC557CD24BCB5D000F9AB71 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -259,6 +266,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DFC557CA24BCB5D000F9AB71 /* ViewController.swift in Sources */,
+				DF455EE324BEC58E004B771C /* EventLabel.swift in Sources */,
 				DFC557C624BCB5D000F9AB71 /* AppDelegate.swift in Sources */,
 				DFC557C824BCB5D000F9AB71 /* SceneDelegate.swift in Sources */,
 			);
@@ -296,14 +304,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		DFC557CB24BCB5D000F9AB71 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				DFC557CC24BCB5D000F9AB71 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		DFC557D024BCB5D100F9AB71 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -593,6 +593,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		DFC557F524BCB6C900F9AB71 /* XCRemoteSwiftPackageReference "HorizonCalendar" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/airbnb/HorizonCalendar";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.1.3;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		DFC557F624BCB6C900F9AB71 /* HorizonCalendar */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DFC557F524BCB6C900F9AB71 /* XCRemoteSwiftPackageReference "HorizonCalendar" */;
+			productName = HorizonCalendar;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = DFC557BA24BCB5D000F9AB71 /* Project object */;
 }
